@@ -1,0 +1,13 @@
+/* pages/myself/setting/setting.wxss */
+.button_submit{
+   width: 50%;
+  background-color: #b39851;
+  color: white;
+  font-size: 25rpx;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+}
+.button-hover {
+  background-color: white;
+   color: #b39851;
+}

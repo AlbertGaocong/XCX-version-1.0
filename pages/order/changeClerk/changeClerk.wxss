@@ -1,0 +1,38 @@
+/* pages/order/changeClerk/changeClerk.wxss */
+.index-clerk-item{
+  margin-top: 10rpx;
+  width:25%;
+  float: left;
+  background-color: #f4f4f4;
+}
+.index-clerk-photo-img{
+  height: 150rpx;
+  width: 150rpx;
+   border-radius: 50%;
+   border: 1rpx solid #b39851;
+}
+.clerk-name{
+  font-size: 28rpx;
+  color: #b39851;
+  word-break: keep-all; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  height: 28rpx;
+  line-height: 28rpx;
+  width: 100rpx;
+}
+.margin-top{
+  margin-top: 10rpx
+}
+.index-clerk-photo{
+   height: 150rpx;
+    margin-top: 10rpx;
+    text-align:center;
+}
+.index-clerk-name{
+  text-align:center;
+  margin-bottom: 5rpx;
+  margin-top:7rpx;
+
+}

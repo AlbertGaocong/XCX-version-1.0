@@ -1,0 +1,16 @@
+<!--pages/order/changeClerk/changeClerk.wxml-->
+ <!--<scroll-view scroll-y="true" style="background: #f4f4f4; height: {{scrollH}}px;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+  <view>-->
+<view style="background: #f4f4f4; height: {{scrollH}}px;">
+<view wx:for="{{list}}" class="index-clerk-item" style="background: #f4f4f4;" >     
+                <view class="index-clerk-photo"  id="{{index}}" bindtap="selectClerk">
+                    <image src="{{item.avatar}}" class="index-clerk-photo-img" mode="aspectFill"></image>
+                    </view>
+                    <view class="index-clerk-name">  
+                    <text class="clerk-name margin-top">{{item.objName}}</text>
+                    </view> 
+                      
+            </view>
+</view>
+            <!--</view>
+ </scroll-view>-->

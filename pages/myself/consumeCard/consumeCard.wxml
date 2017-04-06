@@ -1,0 +1,16 @@
+<scroll-view scroll-y="true" class="scroll-sty" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+  <view wx:for="{{list}}" class="card-list">
+    <navigator url="">
+      <view class="view-header">
+        <text class="text-product text-size-small">{{item.courseCardName}}</text>
+        <text class="text-date text-size-small">{{item.timeNow}}</text>
+      </view>
+        <text class="text-shop-title">{{item.usedShopName}}</text>
+        <view class="comment" hidden="{{!item.isShow}}" >
+        <image src="../../../images/icon_order.png" class="comment-image"></image>
+          <text wx:if="{{item.isComment}}" class="text-status">去评价</text>
+          <text wx:else class="text-status">已评价</text>
+         </view>
+    </navigator>
+  </view>
+</scroll-view>

@@ -1,0 +1,78 @@
+
+<!--pages/myself/myself.wxml-->
+<view style="width:750rpx background-color:white">
+<view style="background-color:white">
+  <view class="nav-buttonView" bindtap="shopList">切换店铺</view>
+  <view class="myself-header-view" bindtap="setting">
+    <image src="{{userInfo.avatar}}" class="header-image"></image>
+    <view class="header-nameView">{{userInfo.userName}}</view>
+  </view>
+  <view class="mark-contentView">
+    <image src="../../images/icon_personalCenterPhone.png" class="mark-imageView"></image>
+    <view class="mark-contentTextView">{{userInfo.mobile}}</view>
+    <view class="mark-view"> | </view>
+    <image src="../../images/icon_personalCenterShop.png" class="mark-imageView"></image>
+    <view class="mark-contentTextView">{{userInfo.shopName}}</view>
+  </view>
+
+  <!--线-->
+  <view class="mark-lineView"></view>
+</view>
+<view wx:for="{{configArray}}" wx:for-item="i" class="totoalMiddleView">
+
+  <!--余额 优惠券-->
+  <view class="totoalMiddleView" id="{{index}}">
+    <view class="middleView">
+      <image wx:if="{{i.tempID == 0}}" src="../../images/icon_personalCenterPurse.png" class="middleView3"></image>
+      <image wx:elif="{{i.tempID == 1}}" src="../../images/icon_personalCenterCoupon.png" class="middleView3"></image>
+    </view>
+    <view class="middleView0">
+      <view class="middleView1">{{i.name}}</view>
+      <view wx:if="{{i.tempID == 0}}" class="middleView2">{{userInfo.balance}}</view>
+       <view wx:else class="middleView2">共{{userInfo.coupon}}张</view>
+
+    </view>
+  </view>
+</view>
+
+<!--循环列表-->
+<!--判断是否绑定美容院-->
+<view wx:if="{{bindInfo.defaultCompanyCode==null||bindInfo.defaultCompanyCode.length==0}}" class="menu-list">
+  <block wx:for="{{noBindMenuList}}" wx:for-item="menuItem">
+    <view class="{{menuItem.cssName}}">
+      <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+        <view class="menu-item-icon">
+          <image class="menu-item-icon-image" src="{{menuItem.iconUrl}}"> </image>
+        </view>
+        <view class="menu-item-name">
+          <text>{{menuItem.name}}</text>
+        </view>
+        <view class="menu-item-icon">
+          <image class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}" src="../../images/icon_next.png">
+          </image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<view wx:else class="menu-list">
+  <block wx:for="{{menuList}}" wx:for-item="menuItem">
+    <view class="{{menuItem.cssName}}">
+      <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+        <view class="menu-item-icon">
+          <image class="menu-item-icon-image" src="{{menuItem.iconUrl}}"> </image>
+        </view>
+        <view class="menu-item-name">
+          <text>{{menuItem.name}}</text>
+        </view>
+        <view class="menu-item-icon">
+          <image class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}" src="../../images/icon_next.png">
+          </image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+</view>

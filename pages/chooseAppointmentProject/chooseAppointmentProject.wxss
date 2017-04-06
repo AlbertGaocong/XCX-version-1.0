@@ -1,0 +1,109 @@
+.page-class{
+    background-color: white;
+}
+.login_tag{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+ justify-content: space-around; 
+ background-color: white;
+}
+.ceter-hor{
+  width: 50%;
+  text-align: center;
+
+}
+.ceter-hor-sel{
+  width: 50%;
+  text-align: center;
+  color: #b39851;
+}
+.choose-num{
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: red;
+    font-size: 25rpx;
+    padding-top: 20rpx;
+    padding-bottom: 25rpx;
+}
+.normal-text{
+    font-size: 32rpx;
+}
+.selected-text{
+font-size: 32rpx;
+color: #b39851;
+}
+.order-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+    padding-top: 25rpx;
+    padding-bottom: 25rpx;
+    align-items:center;
+
+}
+.order-item-ver{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+}
+.icon-check{
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 16rpx;
+    margin-right: 16rpx;
+}
+.text-width{
+    width: 65%;
+}
+.text-widthsmall{
+    width: 25%;
+}
+.image-width{
+    width: 10%;
+}
+.text-left{
+    text-align: left;
+}
+.text-rignt{
+    text-align: right;
+    margin-right: 20rpx;
+}
+.white-back{
+    background: white;
+}
+.line{
+    background-color: #999999;
+    width: 100%;
+    height: 2rpx;
+}
+
+.text-size{
+    font-size: 35rpx;
+}
+.background-f4{
+    background-color: #f4f4f4;
+    padding: 20rpx;
+}
+.finish {
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    margin: 16px;
+    box-shadow: 4px 1px 1px #cccccc;
+}
+.top{
+  
+}

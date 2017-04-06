@@ -1,0 +1,99 @@
+.order-item-all{
+    display: flex;
+    flex-direction:column;
+    width: 750rpx;
+    text-align: center;
+    justify-content: center;
+}
+.order-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+    padding-top: 25rpx;
+    padding-bottom: 25rpx;
+    align-items:center;
+}
+.right-text{
+    width: 46%;
+    text-align: right;
+    font-size: 25rpx;
+    padding-right: 25rpx;
+}
+.left-text{
+    width: 50%;
+    text-align: left;
+     font-size: 25rpx;
+      padding-left: 25rpx;
+}
+.right-text-color{
+    width: 46%;
+    text-align: right;
+    font-size: 25rpx;
+    color: #b39851;
+     padding-right: 25rpx;
+}
+.line-small{
+    background-color: #f4f4f4;
+    height: 2rpx;
+    width: 100%;
+}
+.line-big{
+    background-color: #f4f4f4;
+    height: 15rpx;
+    width: 100%;
+}
+.icon-payway{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 25rpx;
+}
+.icon-check{
+    width: 30rpx;
+    height: 30rpx;
+    background-image: url()
+}
+.item-ver{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    margin-left: 20rpx;
+    width:75%;
+}
+.text-size{
+    font-size: 20rpx;
+}
+.text-small{
+    font-size: 17rpx;
+    color: #999999;
+    margin-top: 2rpx;
+}
+.button_submit{
+    width: 70%;
+  background-color: #f4f4f4;
+  color: #b39851;
+  border:2rpx;
+   dashed: #000;
+  font-size: 25rpx;
+}
+.button-hover {  
+  background-color: #999999;
+   color: #b39851;
+}
+.row-flex-bottom-center{
+ position:fixed;
+    right: 0;
+    bottom: 0;
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+     justify-content: center;
+      background: #f4f4f4;
+}
+.scroll-view{
+    background-color: white;
+}

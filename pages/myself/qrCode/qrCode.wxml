@@ -1,0 +1,40 @@
+
+<!--pages/myself/qrCode/qrCode.wxml-->
+<view class="bgImage" style=" height:{{sizeHeight}};backgroundcolor:red">
+  <view class="titleView-Style">
+    <text class="titleText-Style">绑定美容院</text>
+  </view>
+  <view class="titleImageView-Style">
+  <image src=" http://cdn-xcx.imeiyebang.com/xiaochengxu/images/icon-Crown.png " style="width:70%;height:30rpx "></image>
+</view>
+<canvas bindtap="previewImg "  class="qrCode-View " canvas-id="mycanvas"  style="width:300rpx;height:150px "
+/>
+<view class="bottomView-Style ">
+<text class="titleText-Style ">将二维码提供给美容院，让其与自己绑定，绑定后即可对项目进行查看和预约</text>
+</view>
+</view>
+
+<!--<view class="container-box ">-->
+
+  <!--<view class="img-box ">-->
+
+    <!--<canvas bindtap="previewImg " hidden="{{canvasHidden}} " style="width: 686rpx;height: 686rpx;background:#f1f1f1; " canvas-id="mycanvas " />-->
+
+    <!--<image bindtap="previewImg " mode="scaleToFill " src="{{imagePath}} "></image>-->
+
+  <!--</view>-->
+
+  <!--
+  <form bindsubmit="formSubmit ">
+    <view class="input-row ">
+      <label>网址</label>
+      <input name='url' value='' type="text " maxlength="255 " placeholder="{{placeholder}} " />
+    </view>
+    <button formType="submit " class="mybtn " type="primary ">生成二维码</button>
+  </form>
+  -->
+
+<!--</view>
+<view hidden="{{maskHidden}} " class="mask "></view>
+<view class="canvas-box ">
+</view>-->

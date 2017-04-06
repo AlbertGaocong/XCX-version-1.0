@@ -1,0 +1,100 @@
+/* pages/myself/appointmentList/appointmentList.wxss */
+.view-header{
+    height: 44px;
+    border: 1rpx solid #e5e5e5;
+    background-color: white;
+}
+.text-progress{
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    text-align: center;
+    width: 374rpx;
+    font-size: 28rpx;
+}
+.view-line{
+    height: 22px;
+    width: 1rpx;
+    margin-top: 11px;
+    background-color: #e5e5e5;
+    float: left;
+}
+.text-complate{
+    float: right;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 372rpx;
+    font-size: 28rpx;
+}
+.view-content{
+    margin-top: 20rpx;
+    background-color: white;
+    border-bottom: 1rpx solid #f4f4f4;
+    padding: 0 16rpx;
+    overflow: hidden
+}
+.view-list-header{
+    height: 60rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.text-time{
+    float: left;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #222222;
+    font-size: 28rpx;
+}
+.text-duration{
+    float: right;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    color: #b39851;
+    width: 96rpx;
+    text-align: right;
+}
+.image-time{
+    float: right;
+    padding-top: 20rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+.text-project-name{
+    color: black;
+    font-size: 28rpx;
+    float: left;
+    height: 48rpx;
+    padding-top: 12rpx;
+    line-height: 48rpx;
+    width: 500rpx;
+    word-break: keep-all; /* 不换行 */
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...)    ；需与overflow:hidden;一起使用。*/
+}
+.text-family{
+    float: left;
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 500rpx;
+    color: #666666;
+    font-size: 26rpx;
+}
+.text-shop{
+    float: left;
+    height: 40rpx;
+    line-height: 40rpx;
+    width: 500rpx;
+    color: #666666;
+    font-size: 26rpx;
+    padding-bottom: 12rpx;
+}
+.text-cancel{
+    float: right;
+    width: 140rpx;
+    text-align: center;
+    height: 140rpx;
+    line-height: 140rpx;
+    color: #b39851;
+}

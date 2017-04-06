@@ -1,0 +1,49 @@
+<!--pages/chooseAppointmentProject/chooseAppointmentProject.wxml-->
+<view class="page-class">
+
+<view class="top">
+    <view class="login_tag">
+            <text  wx:if="{{isChooseMyCard}}"  class="ceter-hor-sel" bindtap="chooseMycard">我的疗程卡</text>
+            <text wx:else class="ceter-hor" bindtap="chooseMycard">我的疗程卡</text>
+            
+            
+           <text wx:if="{{!isChooseMyCard}}" class="ceter-hor-sel" bindtap="chooseShop">店内项目</text>
+           <text wx:else class="ceter-hor" bindtap="chooseShop">店内项目</text>
+           
+    </view>
+    <view class="line"></view>
+    <view class="choose-num">已选{{chooseCount}}项</view>
+    <view class="line"></view>
+    </view>
+    <scroll-view  scroll-y="true">
+        <view hidden="{{!isChooseMyCard}}" wx:for="{{myCardDatas}}"  class="order-item-ver" bindtap="mycardClick" id="{{index}}">
+        <view class="order-item">
+            <image  wx:if="{{!item.isChoose}}" src="../../images/icon_uncheck.png" class="icon-check"></image>
+        <image wx:else src="../../images/icon_checked.png" class="icon-check"></image>
+        <text wx:if="{{!item.isChoose}}" class="normal-text text-width text-left">{{item.objName}}</text>
+        <text wx:else class="selected-text text-width text-left">{{item.objName}}</text>
+        <text wx:if="{{!item.isChoose}}" class="normal-text text-rignt text-widthsmall">{{item.courseDuration}}分钟</text>
+        <text wx:else class="selected-text text-rignt text-widthsmall">{{item.courseDuration}}分钟</text>
+        
+        </view>
+        <view class="line"></view>
+        </view>
+        <view hidden="{{isChooseMyCard}}" wx:for="{{shopProjectDatas}}"  class="order-item-ver" wx:for-index="idx" >
+        <view class="margin-left text-size background-f4">{{item.categoryName}}</view>
+        <view class="line"></view>
+            <view wx:for="{{item.subjects}}"  class="order-item-ver" bindtap="shopProjectClick" id="{{index+'-'+idx}}">
+            <view class="order-item">
+            <image  wx:if="{{!item.isChoose}}" src="../../images/icon_uncheck.png" class="icon-check"></image>
+        <image wx:else src="../../images/icon_checked.png" class="icon-check"></image>
+        <text wx:if="{{!item.isChoose}}" class="normal-text text-width text-left">{{item.objName}}</text>
+        <text wx:else class="selected-text text-width text-left">{{item.objName}}</text>
+        <text wx:if="{{!item.isChoose}}" class="normal-text text-rignt text-widthsmall">{{item.courseDuration}}分钟</text>
+        <text wx:else class="selected-text text-rignt text-widthsmall">{{item.courseDuration}}分钟</text>
+        </view>
+        <view class="line"></view>
+        </view>
+        </view>
+        
+    </scroll-view>
+    <icon type="success" size="50" color="#b39851" class="finish" bindtap="onfinishClick"/>
+</view>

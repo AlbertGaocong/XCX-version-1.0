@@ -1,0 +1,138 @@
+/* pages/index/index.wxss */
+.project_image{
+ width: 100%;
+}
+.index-nav-item{
+  width:25%;
+  float: left;
+}
+.index-nav-photo{
+    height: 100rpx;
+    margin-top: 10rpx;
+    text-align:center;
+}
+.index-nav-photo-img{
+  height: 100rpx;
+  width:100rpx;
+}
+.index-nav-title{
+  text-align:center;
+  margin-bottom: 5rpx;
+  margin-top:7rpx;
+
+}
+.container {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.name-text{
+  font-size: 25rpx;
+  word-break: keep-all;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.categry-swipe{
+  height: 350rpx;
+}
+.course-title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+ 
+}
+.course-title-left{
+  width: 50%;
+  text-align: left;
+   margin-left: 30rpx;
+   font-size: 35rpx;
+}
+.course-title-right{
+  width: 50%;
+  text-align: right;
+  margin-right: 40rpx;
+  font-size: 35rpx;
+}
+.index-course-item{
+  padding-top: 15rpx;
+  width:33%;
+  float: left;
+  background-color: white;
+}
+.index-course-photo-img{
+  position:relative;
+  height: 200rpx;
+  width:200rpx;
+  left: 30rpx;
+}
+.index-course-title{
+  text-align:left;
+}
+.price-text{
+  margin-left: 30rpx;
+  font-size: 25rpx;
+}
+.margin-bottom{
+  margin-bottom: 30rpx;
+}
+.active-text{
+  text-align: center;
+  font-size: 20rpx;
+  background-color: #b39851;
+  color: white;
+  padding: 4rpx 8rpx;
+  border-radius: 4rpx;
+  margin-left: 35rpx;
+  margin-right: 8rpx;
+  margin-bottom:6rpx;
+
+}
+.margin-top{
+  margin-top: 5rpx
+}
+.text-color{
+  color:#b39851; 
+}
+.text-color-999{
+  color: #999999;
+}
+.text-size{
+  font-size: 17rpx;
+  margin-top: 6rpx;
+}
+.white-color{
+  background-color: white;
+}
+.name-height{
+  width: 180rpx;
+}
+.line{
+  width: 100%;
+  height: 15rpx;
+  background-color:#f4f4f4;
+}
+
+.course-titles{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20rpx;
+  align-items: baseline
+ 
+}
+.discount-price{
+  padding-left: 8rpx;
+  display: flex;
+  flex-direction: row;
+}
+.showites{
+  background: white;
+  width: 100%;
+  height: 370rpx;
+}
+
+

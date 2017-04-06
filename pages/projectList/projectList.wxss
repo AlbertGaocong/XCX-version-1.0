@@ -1,0 +1,61 @@
+/* pages/projectList/projectList.wxss */
+.index-course-item{
+  margin-top: 10rpx;
+  width:335rpx;
+  margin-left: 30rpx;
+  float: left;
+  background-color: white;
+  padding-bottom: 26rpx;
+}
+.index-course-photo-img{
+  height: 330rpx;
+  width: 330rpx;
+}
+.project-name{
+  padding-left: 8rpx;
+  font-size: 28rpx;
+  color: black;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+  display: block;
+  height: 28rpx;
+  line-height: 28rpx;
+  width: 302rpx;
+}
+.discount-price{
+  padding-left: 8rpx;
+  display: flex;
+  flex-direction: row;
+}
+.active-text{
+  text-align: center;
+  font-size: 20rpx;
+  background-color: #b39851;
+  color: white;
+  padding: 4rpx 8rpx;
+  border-radius: 4rpx;
+}
+.project-price{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.text-size{
+  font-size: 20rpx;
+}
+.price-only{
+  margin-top: 4rpx;
+}
+.text-color{
+  color:#b39851; 
+}
+.text-color-999{
+  color: #999999;
+}
+.original-price{
+  padding-left: 8rpx;
+}
+.margin-top{
+  margin-top: 10rpx
+}

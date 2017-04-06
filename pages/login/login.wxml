@@ -1,0 +1,46 @@
+<!--pages/login/login.wxml-->
+<view class="white_back">
+        <image class="login_image"      src="http://cdn-xcx.imeiyebang.com/xiaochengxu/images/login_background.png" mode="aspectFill"></image> 
+     <view class="white-back">
+    <view class="login_tag white-back">
+        <text class="ceter_hor" bindtap="chooseLogin">登录</text>
+        <text class="ceter_hor" bindtap="chooseRegist">新用户注册</text>
+    </view>
+     <view class="login_tag">
+        <view class="ceter_hor_line" hidden="{{hidden}}"></view>
+<view class="ceter_hor_lines" hidden="{{!hidden}}"></view>
+        <view class="ceter_hor_line" hidden="{{!hidden}}"></view>
+<view class="ceter_hor_lines" hidden="{{hidden}}"></view>  
+    </view>
+    </view>
+    <view class="line"></view>
+    <!--登录-->
+<form class="white-back" bindsubmit="loginFormSubmit">
+    <view class="container white-back" hidden="{{hidden}}">
+            <view class="inputView">
+                <input name="login_phones"  placeholder="请输入电话号码" type="number" class="input_phoneNum" placeholder-style="color: black"/>
+            </view>
+            <view class="inputView">
+                <input name="login_pwd" placeholder="请输入您的密码" type="password" class="input_phoneNum" placeholder-style="color: black"/>
+            </view>
+            <button class="button_submit" formType="submit">登 录</button>
+    </view>
+    </form>
+<!--注册-->
+<form class="white-back"  bindsubmit="registFormSubmit">
+ <view class="container white-back" hidden="{{!hidden}}">
+            <view class="inputView">
+                <input name="input_phoneNum" bindinput="bindKeyInput"  placeholder="请输入电话号码" type="number" class="input_phoneNum" placeholder-style="color: black"/>
+            </view>
+             <view class="inputViews">
+                <input placeholder="请输入验证码" type="number" class="sms-code" placeholder-style="color: black" name="sms_code"/>
+                <button class="button_getnum" bindtap="getnum" disabled="{{clicks}}">获取验证码({{time}}s)</button>
+            </view>
+            <view class="inputView">
+                <input name="pwd_code"  placeholder="请输入您的密码" type="password" class="input_phoneNum" placeholder-style="color: black"/>
+            </view>
+            <button formType="submit" class="button_submit">注 册</button>
+    </view>
+    </form>
+
+</view>

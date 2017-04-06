@@ -1,0 +1,42 @@
+<!--pages/makeOrder/makeOrder.wxml-->
+<view>
+ <scroll-view class="scroll-view" style="height: {{allHeight*0.85}}px;" scroll-y="true">
+<view wx:for="{{orderInfos}}" class="order-item-all">
+   <view  class="order-item">
+        <text class="left-text">{{item.hint}}</text>
+        <text wx:if="{{index > 5}}" class="right-text-color"> {{item.name}} </text>
+        <text wx:else class="right-text"> {{item.name}} </text>
+    </view>
+    <view wx:if="{{index==0||index==4||index==7}}" class="line-big"></view>
+    <view wx:else class="line-small"></view>
+    </view>
+ <view class="line-small"></view>
+    <view class="order-item" bindtap="checkClick">
+        <image src="../../images/icon_money.png" class="icon-payway"></image>
+        <view class="item-ver">
+            <text class="text-size">账户余额</text>
+            <text  class="text-small">{{'您的账户余额'+balance+'元'}}</text>
+        </view>
+       
+        <image  wx:if="{{!isChooseBalance}}" src="../../images/icon_uncheck.png" class="icon-check" ></image>
+        <image wx:else src="../../images/icon_checked.png" class="icon-check"></image>
+       
+    </view>
+    <view class="line-small"></view>
+    <view class="order-item" bindtap="wxcheckClick">
+        <image src="../../images/repayment_weixin_icon.png" class="icon-payway"></image>
+        <view  class="item-ver">
+            <text class="text-size">微信支付</text>
+            <text class="text-small">推荐安装微信5.0以上版本使用</text>
+        </view>
+        
+        <image wx:if="{{isChooseBalance}}" src="../../images/icon_uncheck.png" class="icon-check"></image>
+        <image wx:else src="../../images/icon_checked.png" class="icon-check"></image>
+        
+    </view>
+</scroll-view>
+
+<view style="height: {{allHeight*0.15}}px;" class="row-flex-bottom-center">
+        <button class="button_submit" bindtap="orderPay">立即购买</button>
+    </view>
+</view>

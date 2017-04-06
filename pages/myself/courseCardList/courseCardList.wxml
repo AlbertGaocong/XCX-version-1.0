@@ -1,0 +1,83 @@
+
+<!--pages/myself/courseCardList/courseCardList.wxml-->
+<view class="menu-list">
+  <block wx:for="{{listArray}}" wx:for-item="model" wx:key="sss">
+
+    <!--疗程卡-->
+    <view wx:if="{{model.courseCardType === 'LIAOCHENGKA' && model.twoLevType == 'SHIXIAOKA'}}" class="menu-item">
+      <view class="title-style">
+        <text class="title-name-style">{{model.objName}}</text>
+        <text wx:if="{{model.isGift}}" class="thrid-type-style" style="border:1px solid #b89351">  赠  </text>
+        <text wx:elif="{{model.thrLevType != 'NODATA' }}" class="thrid-type-style" style="border:1px solid #b89351">{{model.thrLevType}}</text>
+        <text wx:else class="thrid-type-style"></text>
+        <view class="count-type-style">
+          <text wx:if="{{model.unlimited}}">已划{{model.totalCount - model.remainCount}}次</text>
+          <block wx:else>
+            <view style="color:#FD6B74">{{model.remainCount}}</view>
+            <view class="">/</view>
+            <view class="">{{model.totalCount}}</view>
+          </block>
+        </view>
+      </view>
+      <view wx:if="{{model.twoLevType == 'SHIXIAOKA'}}" class="expiredDate-type-style">
+        <text class="">有效期：{{model.availableDate}} 至 {{model.expiredDate}}</text>
+        <text wx:if="{{model.hasLocked && model.status === 'NORMAL'}}" class="">延长至：{{model.delayToDate}}</text>
+        <text wx:elif="{{model.hasLocked && model.status === 'LOCKED'}}" class="">冻结期：{{model.lockStartDate}}至 {{model.lockEndDate}}</text>
+      </view>
+    </view>
+     <view wx:elif="{{model.courseCardType === 'LIAOCHENGKA' && model.twoLevType == 'CIKA'}}" class="menu-item">
+      <view class="noDateTitle-style">
+        <text class="title-name-style">{{model.objName}}</text>
+        <text wx:if="{{model.isGift}}" class="thrid-type-style" style="border:1px solid #b89351">  赠  </text>
+        <text wx:elif="{{model.thrLevType != 'NODATA' }}" class="thrid-type-style" style="border:1px solid #b89351">{{model.thrLevType}}</text>
+        <text wx:else class="thrid-type-style"></text>
+        <view class="noDateCount-type-style">
+          <text wx:if="{{model.unlimited}}">已划{{model.totalCount - model.remainCount}}次</text>
+          <block wx:else>
+            <view style="color:#FD6B74">{{model.remainCount}}</view>
+            <view class="">/</view>
+            <view class="">{{model.totalCount}}</view>
+          </block>
+        </view>
+      </view>
+      <view wx:if="{{model.twoLevType == 'SHIXIAOKA'}}" class="expiredDate-type-style">
+        <text class="">有效期：{{model.availableDate}} 至 {{model.expiredDate}}</text>
+        <text wx:if="{{model.hasLocked && model.status === 'NORMAL'}}" class="">延长至：{{model.delayToDate}}</text>
+        <text wx:elif="{{model.hasLocked && model.status === 'LOCKED'}}" class="">冻结期：{{model.lockStartDate}}至 {{model.lockEndDate}}</text>
+      </view>
+    </view>
+
+    <!--套卡-->
+    <view wx:elif="{{model.courseCardType === 'TAOKA'}}" class="menu-item">
+      <view class="title-style">
+        <text class="title-name-style">{{model.objName}}</text>
+        <text class="thrid-type-style" style="border:1px solid #b89351">套卡</text>
+      </view>
+      <view wx:for="{{model.taoSubList}}" wx:for-item="taoSubItem" class="title-style">
+        <text class="title-name-style" style="color:#989898">{{taoSubItem.objName}}</text>
+        <text wx:if="{{model.unlimited}}">已划{{taoSubItem.totalCount - taoSubItem.remainCount}}次</text>
+        <view wx:else>
+          <view class="count-type-style">
+            <view style="color:#FD6B74">{{taoSubItem.remainCount}}</view>
+            <view class="">/</view>
+            <view class="">{{taoSubItem.totalCount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!--次卡-->
+
+    <!--<view wx:else class="menu-item" style="height:88rpx">
+      <view class="title-style">
+        <text class="title-name-style">{{model.objName}}</text>
+        <text class="thrid-type-style">cika</text>
+        <view class="count-type-style">
+          <view class="">{{model.remainCount}}</view>
+          <view class="">/</view>
+          <view class="">{{model.totalCount}}</view>
+        </view>
+      </view>
+    </view>-->
+  </block>
+</view>

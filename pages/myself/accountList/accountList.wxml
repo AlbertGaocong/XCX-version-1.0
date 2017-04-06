@@ -1,0 +1,15 @@
+<!--pages/myself/accountList/accountList.wxml-->
+<view class="scroll-sty"  style="height: {{scrollH}}px" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+  <view wx:for="{{list}}" class="account-list">
+    <!--<navigator url="../../order/giveInfo/giveInfo">-->
+      <view class="view-header">
+        <text class="text-time text-size-small">{{item.timeNow}}</text>
+        <text class="text-consume text-size-small">{{item.subjectTypeName}}</text>
+      </view>
+      <view>
+        <text class="text-account-title text-size-big">{{item.businessSubjectName}}</text>
+        <text class="text-money text-size-middle">{{"¥" + item.amount * 0.01}}</text>
+      </view>
+    <!--</navigator>-->
+  </view>
+</view>

@@ -1,0 +1,47 @@
+/* pages/myself/accountList/accountList.wxss */
+
+.scroll-sty{
+    background-color: #f4f4f4;
+}
+.text-size-small{
+    font-size: 24rpx;
+}
+.text-size-middle{
+    font-size: 28rpx;
+}
+.text-size-big{
+    font-size: 30rpx;
+}
+.account-list{
+    margin-bottom: 20rpx;
+    padding-left: 30rpx;
+    padding-right: 20rpx;
+    background: white;
+    height: 150rpx;
+}
+.view-header{
+    border-bottom: 1rpx solid #e5e5e5;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.text-time{
+    color: #999999;
+}
+.text-consume{
+    color: #666666;
+    float: right;
+    width: 200rpx;
+    text-align: right;
+}
+.text-account-title{
+    color: #222222;
+    float: left;
+    line-height: 90rpx;
+}
+.text-money{
+    color: #ff545b;
+    float: right;
+    width: 300rpx;
+    text-align: right;
+    line-height: 90rpx;
+}

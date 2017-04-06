@@ -1,0 +1,90 @@
+/* pages/myself/courseCardList/courseCardList.wxss */
+
+.menu-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #eee;
+  margin-top: 10rpx;
+}
+
+.menu-item {
+  color: #000;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.title-style {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.noDateTitle-style {
+  display: flex;
+  width: 50%;
+  margin-left: 30rpx;
+  height: 88rpx;
+  align-items: center;
+}
+
+.title-name-style {
+  font-size: 28rpx;
+  display: block;
+}
+
+.thrid-type-style {
+  font-size: 24rpx;
+  display: inline-block;
+  margin-left: 10rpx;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  width: 60rpx;
+  text-align: center;
+  color: #b89351;
+}
+
+.count-type-style {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  position: absolute;
+  right: 0;
+  margin-right: 30rpx;
+  align-items:center;
+}
+.noDateCount-type-style {
+  display:flex;
+height:88rpx;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  position: absolute;
+  right: 0;
+  margin-right: 30rpx;
+  align-items:center;
+
+}
+.boder-type-style {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  position: absolute;
+  right: 0;
+}
+
+.expiredDate-type-style {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-bottom: 10rpx;
+  color: #989898;
+}

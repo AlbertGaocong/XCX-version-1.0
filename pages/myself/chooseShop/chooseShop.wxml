@@ -1,0 +1,11 @@
+
+<!--pages/myself/chooseShop/chooseShop.wxml-->
+<view class="company-list-container">
+  <block wx:for="{{list}}">
+    <navigator url="">
+      <view class="company-item" id="{{index}}" bindtap="saveInfo">
+        <text class="company-title">{{item.objName}}</text>
+      </view>
+    </navigator>
+  </block>
+</view>

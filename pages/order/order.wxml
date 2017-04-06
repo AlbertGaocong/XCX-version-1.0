@@ -1,0 +1,87 @@
+<!--pages/order/order.wxml-->
+
+<view class="out-container">
+   <view class="my-order">
+       <view class="order-top">
+         <view class="ord">
+         <navigator url="../myself/appointmentList/appointmentList">
+         我的预约
+         </navigator>
+         </view>
+         <view class="middle">
+            <view class="select-icon">
+               <view class="line"></view>
+               <view class="img" bindtap="selectedCrick">
+                 <image src="../../images/xia.png"></image>
+               </view>
+            </view>
+            <view class="select-crick">点击选择美容师</view>
+            <view wx:if="{{clerkInfo.avatarHave}}" class="crick-img">
+                <image src="{{clerkInfo.avatar}}"></image>
+                
+            </view>
+            <view wx:else="{{clerkInfo.avatarNo}}" class="crick-img">
+                <image src="http://cdn-xcx.imeiyebang.com/xiaochengxu/images/07.png"></image>
+                
+            </view>
+
+            <view class="crick-name">{{clerkInfo.crickName}}</view>
+            <view class="crick-class">
+               <image wx:for="{{clerkInfo.averageRank1}}" src="../../images/pingjia1.png"></image>
+               
+               <image wx:for="{{clerkInfo.averageRank0}}" src="../../images/pingjia0.png"></image>
+            </view>
+         </view>
+       </view>
+   </view>
+
+ <scroll-view class="scrollview" scroll-y="true"  >
+   <view class="piker-time">
+      <view class="time-title" bindtap="selectDate">
+         <view  wx:for="{{selectDateData.dates}}" >
+           <view wx:if="{{item.selected}}" style="border-bottom: 1rpx solid #b39851; color:#b39851" data-index="{{index}}" data-selected="{{item.selected}}">{{item.showdate}}</view>
+           <view wx:else data-index="{{index}}"  data-selected="{{item.selected}}" style="border-bottom: 1rpx solid #ffffff; color:#000000">{{item.showdate}}</view>
+         </view>
+      </view>  
+      <view class="time-content">
+        <view class="left-icon">
+          <image src="../../images/iconfont-shangwu.png"></image>
+          <image class="middle" src="../../images/xiawu.png"></image>
+          <image src="../../images/iconfont-wanshang.png"></image>
+        </view>
+        <view class="content-right">
+          <view wx:for-items="{{openTime}}" class="index-nav-item"> 
+              <view class="index-nav-title" >
+                  <view wx:if="{{item.used}}" style=" color: #e5e5e5;">
+                      {{item.show}}
+                  </view>
+                  <view wx:elif="{{item.selected}}" data-date="{{item.date}}" bindtap="selectTime" style="background-color:#b39851 ;color: white;">
+                    {{item.show}}
+                  </view>
+                  <view id="s" wx:else style="color: #000000;" >
+                    <view id="tapTest" data-date="{{item.date}}" bindtap="selectTime" >
+                        {{item.show}}
+                    </view>
+                  </view>
+              </view>
+          </view> 
+        </view> 
+        
+      </view>
+   </view>
+   <view class="select-project">
+     <view class="click-youwant">
+       <view class="ui-link" bindtap="navgatorToAppointmentProject">
+         <view class="ui-link-pro">项目:</view>
+         <view class="ui-link-click" style="display:flex">
+            {{showSelectedProject}}
+         </view>
+         <view class="ui-link-image"><image src="../../images/you.png"></image></view>
+       </view>
+       <view class="hua" bindtap="shaoHua">捎话</view>
+     </view>
+     <view class="send-order" bindtap="sendOrder">发送预约</view>
+   </view>
+</scroll-view>
+
+</view>

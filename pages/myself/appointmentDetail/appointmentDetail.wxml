@@ -1,0 +1,24 @@
+<!--pages/myself/appointmentDetail/appointmentDetail.wxml-->
+<image src="{{dataModel.cover}}" class="image-head"></image>
+<text class="text-family-name">{{dataModel.clerkName}}</text>
+<view class="view-star">
+    <image wx:for="{{imageData}}" src="{{item}}" class="image-star"></image>
+</view>
+<view class="view-time">
+    <view class="view-time-line"></view>
+    <text class="text-time">{{dataModel.time}}</text>
+</view>
+<view class="view-duration">
+   
+    <image src="http://cdn-xcx.imeiyebang.com/xiaochengxu/images/ReminderTime.png" class="image-time"></image>
+     <text class="text-duration">共计{{dataModel.curseDuration}}分钟</text>
+</view>
+<text class="text-project">{{dataModel.productName}}</text>
+<view class="view-give-info">
+    <text class="text-give-info">捎话</text>
+    <view class="line-give-info"></view>
+    <textarea class="textarea-give-info" maxlength="-1" disabled="true" value="{{dataModel.comments}}"/>
+</view>
+<button class="button-cancle" bindtap="cancleAppoint" hidden="{{isHiddenCancle}}">取消预约</button>
+
+

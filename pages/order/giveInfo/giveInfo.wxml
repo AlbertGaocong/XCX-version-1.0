@@ -1,0 +1,13 @@
+<!--pages/order/giveInfo/giveInfo.wxml-->
+<!--<scroll-view scroll-y="true" scroll-x="false" style="height: {{scrollH}}px; margin-bottom: {{bottomH}}px;">-->
+<scroll-view scroll-y="true" scroll-x="false" style="height: {{scrollH}}px;">
+    <view wx:for="{{list}}" class="view-give-info" bindtap="giveInfoTap" id="{{index}}">
+        <text class="text-give-info">{{item.content}}</text>
+    </view>
+</scroll-view>
+<view style="height: {{bottomH}}px; padding-right: 30rpx;">
+    <!--<button type="default" bindtap="complateButtonClick" hover-class="other-navigator-hover" style="height: 80rpx; width: 120rpx; color: #b39851; float: right;" hidden="{{true}}">完成</button>-->
+<icon type="success" size="50" color="#b39851" style="color: #b39851; float: right;box-shadow: 4px 1px 1px #cccccc;border: 0 solid #ffffff; border-radius: 500px;"bindtap="complateButtonClick"/>
+</view>
+<text class="place-holder">给美容师捎话:</text>
+<textarea class="give-info-input" style="height: {{textAreaH}}px; padding:0 20rpx; width: 710rpx;" class="textarea-give-info" maxlength="-1" value="{{giveInfoText}}" bindinput="bindinput" />

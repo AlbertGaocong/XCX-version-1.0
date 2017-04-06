@@ -1,0 +1,13 @@
+<!--pages/myself/couponList/couponList.wxml-->
+<view class="background">
+    <view class="">
+        
+            <text  wx:if="{{isChooseMyCard}}"  class="ceter-hor-sel" bindtap="chooseMycard">未使用</text>
+            <text wx:else class="ceter-hor" bindtap="chooseMycard">已使用</text>
+            
+            
+           <text wx:if="{{!isChooseMyCard}}" class="ceter-hor-sel" bindtap="chooseShop">店内项目</text>
+           <text wx:else class="ceter-hor" bindtap="chooseShop">店内项目</text>
+           
+    </view>
+    </view>

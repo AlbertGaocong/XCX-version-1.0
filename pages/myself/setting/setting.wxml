@@ -1,0 +1,5 @@
+<!--pages/myself/setting/setting.wxml-->
+<view>
+  <button class="button_submit" bindtap="logout">退出登录</button>
+
+</view>

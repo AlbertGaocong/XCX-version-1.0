@@ -1,0 +1,21 @@
+<!--pages/projectList/projectList.wxml-->
+ <view style="background: #f4f4f4; height: {{scrollH}}px;">
+  <view wx:for-items="{{list}}" class="index-course-item">
+     <navigator url="../../pages/projectDetail/projectDetail?id={{item.code}}">
+                <view class="index-course-photo">
+                    <image  src="{{item.cover}}" class="index-course-photo-img" mode="aspectFill" ></image>
+                </view>
+              
+                <text class="project-name margin-top">{{item.objName}}</text>
+                <view class="discount-price margin-top">
+                    <text class="active-text">{{item.projectTypeName}}</text>
+                    <text class="project-price text-color">{{item.amount*0.01}}</text>
+                    <text class="text-size text-color-999 price-only">元/{{item.times}}次</text>
+                </view>
+                <view class="original-price">
+                 <text wx:if="{{dataProjectType == '0'}}" class="text-size text-color-999">{{"单次    " + item.price*0.01+"元"}}</text>
+                 <text wx:elif="{{dataProjectType == '1'}}" class="text-size text-color-999">{{"市场   " + item.price*0.01+"元"}}</text>
+                 </view>
+                </navigator>
+            </view>
+ </view>

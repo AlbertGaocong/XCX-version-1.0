@@ -1,0 +1,23 @@
+<!--pages/myself/appointmentList/appointmentList.wxml-->
+<view class="view-header">
+    <text class="text-progress" style="color: {{progressColor}};" bindtap="progressTap">进行中</text>
+    <view class="view-line"></view>
+    <text class="text-complate" style="color: {{complateColor}};" bindtap="complateTap">已结束</text>
+</view>
+<view style="background-color: #f4f4f4; padding: 1rpx 20rpx; box-sizing:border-box;">
+    <view class="view-content" wx:for="{{list}}">
+    <navigator url="../appointmentDetail/appointmentDetail?appointCode={{item.code}}&isHiddenCancle={{item.isHiddenCancle}}">
+        <view class="view-list-header">
+            <text class="text-time">{{item.timeNow}}</text>
+            <text class="text-duration">{{item.curseDuration + '分钟'}}</text>
+            <image class="image-time" src="http://cdn-xcx.imeiyebang.com/xiaochengxu/images/ReminderTime.png"></image>
+        </view>
+        <view style="float: left; width: 500rpx;">
+            <text class="text-project-name">{{item.projectNames}}</text>
+            <text class="text-family">{{item.clerkName}}</text>
+            <text class="text-shop">{{item.shopName}}</text>
+        </view>
+        <text class="text-cancel" hidden="{{complateHidden}}">{{item.complateString}}</text>
+        </navigator>
+    </view>
+</view>

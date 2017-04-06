@@ -1,0 +1,39 @@
+<!--pages/projectDetail/projectDetail.wxml-->
+<view>
+    <scroll-view class="scroll-view" style="height: {{allHeight*0.9}}px;" scroll-y="true">
+        <image src="{{detailData.cover}}" class="project_image" mode="aspectFill"></image>
+        <text class="circle">{{detailData.courseDuration}}分钟</text>
+        <view class="row-flexs"> 
+        <view class="title-text margin-left">{{detailData.objName}}</view>
+         <view class="title-text margin-left">{{detailData.fanwei}}</view>
+        </view>
+        <view class="row-flex margin-top">
+            <view class="title-text margin-left text-color">{{'¥'+detailData.amount*0.01}}
+            </view>
+            <view class="text-color text-small-size margin-left-small">{{'包含次数('+detailData.times+'次)'}}</view>
+        </view>
+        <text class="text-color-999 text-small-size margin-left">{{'价格 '+detailData.marketPrice+'元'}}</text>
+        <view class="row-flex-center margin-top">
+            <view class="line" hidden="{{timeHidden}}"></view>
+        </view>
+        <view class="row-flex margin-tops" hidden="{{timeHidden}}">
+            <image class="small-image margin-left" src="../../images/icon_pro_time.png"></image>
+            <text class="text-color-666 text-small-size margin-left-small">{{'截止日期 '+detailData.timeNow}}</text>
+            <image src="../../images/icon_buy.png" class="small-image margin-left"></image>
+            <text class="text-color-666 text-small-size margin-left-small">{{'已抢购 '+detailData.collectNumber}}</text>
+        </view>
+        <view class="line-height margin-tops"></view>
+        <view class="title-text margin-left margin-tops">项目详情</view>
+        <view class="row-flex-center margin-top">
+            <view class="line"></view>
+        </view>
+        <view class="row-flex-center margin-top">
+            <text class="title-text margin-text">{{detailData.description}}</text>
+        </view>
+    </scroll-view>
+
+    <view style="height: {{allHeight*0.1}}px;" class="row-flex-bottom-center">
+        <button class="button_submit" bindtap="makeOrder">立即购买</button>
+    </view>
+    <!--</view>-->
+</view>

@@ -1,0 +1,31 @@
+<!--pages/myself/changeShopList/changeShopList.wxml-->
+
+  <view class="company-list-container">
+  <text class="sub-title">【当前美容院】</text>
+
+  <view class="company-item" >
+         
+          <image src="{{shopCover}}" class="company-image"/>
+            
+          <view class="company-item-right">
+            <text class="company-title">{{shopName}}</text>
+  </view>
+  </view>
+    <text class="sub-title">【美容院列表】</text>
+
+    <block wx:for="{{list}}" wx:for-index="id">
+      
+      <navigator url="../chooseShop/chooseShop?id={{item.code}}&defaultCode={{item.customerProfileCode}}">
+      <!--{url:"changeShopList/changeShopList?companyName="+shopData.companyName+"&shopName="+shopData.shopName+"&shopCover="+shopData.shopCover}-->
+        <view class="company-item" >
+          <!--<view class="news-item-left">-->
+          <image src="{{item.cover}}" class="company-image"/>
+            
+          <!--</view>-->
+          <view class="company-item-right">
+            <text class="company-title">{{item.objName}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>

@@ -1,0 +1,59 @@
+/* pages/myself/consumeCard/consumeCard.wxss */
+.scroll-sty{
+    background-color: #f4f4f4;
+    height: 100%;
+}
+.text-size-small{
+    font-size: 24rpx;
+}
+.text-size-middle{
+    font-size: 28rpx;
+}
+.text-size-big{
+    font-size: 30rpx;
+}
+.card-list{
+    margin-top: 20rpx;
+    padding-left: 30rpx;
+    padding-right: 20rpx;
+    background: white;
+    height: 150rpx;
+}
+.view-header{
+    border-bottom: 1rpx solid #e5e5e5;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.text-product{
+    color: #999999;
+}
+.text-date{
+    color: #666666;
+    float: right;
+    width: 400rpx;
+    text-align: right;
+}
+.text-shop-title{
+    color: #999999;
+    float: left;
+    line-height: 90rpx;
+    font-size: 24rpx;
+}
+.comment{
+    float: right;
+    width: 70rpx;
+    height: 100rpx;
+    padding-top: 10rpx;
+}
+.comment-image{
+   width: 40rpx;
+   height: 40rpx; 
+   padding-left: 15rpx;
+}
+.text-status{
+    display: block;
+    color: #C4AF7F;
+    text-align: center;
+    line-height: 30rpx;
+    font-size: 20rpx;
+}

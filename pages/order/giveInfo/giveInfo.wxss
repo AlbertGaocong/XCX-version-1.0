@@ -1,0 +1,34 @@
+/* pages/order/giveInfo/giveInfo.wxss */
+.view-give-info{
+    padding-left: 30rpx;
+    height: 80rpx;
+}
+.text-give-info{
+    display: block;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #222222;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.place-holder{
+    color: #999999;
+    font-size: 28rpx;
+    padding-left: 30rpx;
+}
+.textarea-give-info{
+    color: #222222;
+    font-size: 24rpx;
+}
+.finish {
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 100rpx;
+    right: 0;
+    z-index: 1;
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    margin: 16px;
+    box-shadow: 4px 1px 1px #cccccc;
+}

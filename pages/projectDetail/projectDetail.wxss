@@ -1,0 +1,121 @@
+/* pages/projectDetail/projectDetail.wxss */
+.project_image{
+    width: 100%;
+    height: 350rpx;
+    background-image: url()
+}
+.row-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items:center;
+    text-align:center;
+    height:40rpx;
+line-height:40rpx;
+
+
+}
+.circle{
+    position:absolute;
+    right: 20rpx;
+    top:292rpx;
+    width: 120rpx;
+    height: 60rpx;
+    border-radius: 60rpx 60rpx 0 0;
+    background-color: #b39851;
+    text-align: center;
+    align-content: center;
+    font-size: 20rpx;
+    line-height: 60rpx;
+    color: white;
+}
+.title-text{
+    font-size: 28rpx;
+}
+.margin-left{
+    margin-left: 20rpx;
+}
+.margin-left-small{
+    margin-left: 10rpx;
+}
+.text-color{
+    color: #b39851;
+}
+.text-small-size{
+    font-size: 24rpx;
+}
+.text-color-999{
+    color: #999999;
+}
+.line{
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 2rpx;
+    margin-left: 25rpx;
+    margin-right: 25rpx;
+}
+.margin-top{
+    margin-top: 10rpx;
+}
+.margin-tops{
+    margin-top: 17rpx;
+}
+.line-height{
+    height: 10rpx;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+.small-image{
+    width: 20rpx;
+    height: 20rpx;
+}
+.row-flex-center{
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+     justify-content: center;
+}
+.margin-text{
+    width: 95%;
+}
+.text-color-666{
+    color: #666666;
+}
+.button_submit{
+    width: 70%;
+  background-color: black;
+  color: #b39851;
+  border-radius: 8rpx;
+  font-size: 25rpx;
+}
+.button-hover {  
+  background-color: #999999;
+   color: #b39851;
+}
+.row-flex-bottom-center{
+ position:fixed;
+    right: 0;
+    bottom: 0;
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+     justify-content: center;
+      background: #f4f4f4;
+}
+.margin-all-bottom{
+   
+    height: 100rpx;
+    background: #666666;
+}
+.scroll-view{
+    background-color: white;
+}
+.row-flexs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+	align-items:center;
+
+}

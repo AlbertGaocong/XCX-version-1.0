@@ -1,0 +1,130 @@
+/* pages/myself/appointmentDetail/appointmentDetail.wxss */
+/*头像*/
+.image-head{
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    margin: 60rpx auto 20rpx auto;
+    border-radius: 50%;
+}
+/*美容师*/
+.text-family-name{
+    display: block;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 32rpx;
+    text-align: center;
+}
+/*评级 */
+.view-star{
+    margin: 20rpx auto;
+    height: 30rpx;
+    width: 170rpx;
+}
+.image-star{
+    margin-left: 4rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+/*时间*/
+.view-time{
+    position: relative;
+    height: 22rpx;
+    padding: 20rpx 60rpx 0 60rpx;
+    margin-bottom: 60rpx;
+    box-sizing:border-box;
+}
+.view-time-line{
+    height: 1rpx;
+    background-color: #e5e5e5;
+}
+.text-time{
+    display: block;
+    /*width: 240rpx;*/
+    width: 290rpx;
+    height: 42prx;
+    line-height: 42rpx;
+    /*从pdding开始*/
+    position: absolute;
+    font-size: 34rpx;
+    text-align: center;
+    /*left: 255rpx;*/
+    left: 230rpx;
+    top: 0;
+    background-color: white;
+}
+/*持续时间*/
+.view-duration{
+    display: flex;
+    flex-direction: row;
+    height: 36rpx;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.image-time{
+    width: 24rpx;
+    height: 24rpx;
+    margin: 6rpx 8rpx 6rpx 0;
+}
+.text-duration{
+    height: 36rpx;
+    line-height: 36rpx;
+    font-size: 30rpx;
+    color: #b39851;
+}
+/*项目*/
+.text-project{
+    display: block;
+    height: 54rpx;
+    line-height: 54rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: #666666;
+}
+/*捎话*/
+.view-give-info{
+    margin: 40rpx 30rpx 120rpx 30rpx;
+    height: 300rpx;
+    padding: 30rpx 20rpx 20rpx 20rpx;
+    border: 1rpx solid #b39851;
+    box-sizing:border-box;
+    position: relative;
+}
+.text-give-info{
+    display: block;
+    width: 80rpx;
+    height: 60prx;
+    line-height: 60rpx;
+    /*从pdding开始*/
+    position: absolute;
+    font-size: 28rpx;
+    text-align: center;
+    left: 305rpx;
+    top: 0;
+    background-color: white;
+    color: #b39851;
+}
+.line-give-info{
+    background: #b39851;
+    height: 1rpx;
+    margin-bottom: 30rpx;
+}
+.textarea-give-info{
+    display: block;
+    height: 220rpx;
+    width: 650rpx;
+    color: #666666;
+    font-size: 28rpx;
+}
+/*取消预约*/
+.button-cancle{
+    width: 650rpx;
+    height: 80rpx;
+    color: #b39851;
+    border: 1rpx solid #b39851;
+    font-size: 32rpx;
+    margin: 0 auto;
+    background-color: white;
+}

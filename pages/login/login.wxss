@@ -1,0 +1,108 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+  box-sizing: border-box;
+} 
+.login_tag{
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  padding-top: 30rpx;
+ justify-content: space-around; 
+}
+.ceter_hor{
+
+  width: 375rpx;
+  text-align: center;
+}
+.login_image{
+ width: 100%;
+ margin-bottom:-8rpx;
+
+}
+.ceter_hor_line{
+   width: 80rpx;
+    height: 3rpx;
+    background-color: #222222;
+    text-align: center;
+}
+.ceter_hors{
+  width: 50%;
+   height: 30rpx;
+  text-align: center;
+}
+.ceter_hor_lines{
+   width: 80rpx;
+    height: 3rpx;
+    text-align: center;
+}
+.input_phoneNum{
+  width: 500rpx;
+  margin:3rpx 3rpx 3rpx 3rpx;
+  height:49rpx;
+  align-content: center;
+  font-size: 30rpx;
+}
+.inputView{
+   width: 80%;
+    border:  1rpx solid black;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    margin-top: 40rpx;
+     font-size: 25rpx;
+}
+.inputViews{
+  display: flex;
+  flex-direction: row;
+    width: 80%;
+    border:  1rpx solid black;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    margin-top: 40rpx;
+     font-size: 30rpx;
+     align-items:center;
+
+}
+.line{
+  width: 100%;
+  height: 20rpx;
+  margin-top: 3rpx;
+  background-color: #f4f4f4;
+}
+.button_submit{
+   width: 50%;
+  background-color: #b39851;
+  color: white;
+  font-size: 25rpx;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+}
+.button-hover {
+  background-color: white;
+   color: #b39851;
+}
+.button_getnum{
+   height:49rpx;
+  background-color: #b39851;
+  color: white;
+  font-size: 25rpx;
+   align-content: center;
+   line-height:49rpx;
+
+}
+.white-back{
+  background-color: white;
+}
+.sms-code{
+  width:330rpx;
+  margin:3rpx 3rpx 3rpx 3rpx;
+  height:49rpx;
+  align-content: center;
+  font-size: 30rpx;
+
+}
+

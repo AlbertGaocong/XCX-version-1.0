@@ -1,0 +1,49 @@
+<!--pages/index/index.wxml-->
+<view class="white-color">
+    <image src="http://cdn-xcx.imeiyebang.com/xiaochengxu/images/project_banner.png" class="project_image" mode="widthFix"></image> 
+  <swiper indicator-dots="true" class="categry-swipe" current="0">
+    <block wx:for="{{array}}">
+        <swiper-item>
+            <view wx:for-items="{{item}}" class="index-nav-item"> 
+            <view>
+            <navigator url="../../pages/projectList/projectList?catagotyCode={{item.code}}&projectType=0&categary={{item.categoryName}}">
+                <view class="index-nav-photo"  >
+                    <image  src="{{item.imageUrl+'2x.png'}}" class="index-nav-photo-img" ></image>
+                </view>
+                <view class="index-nav-title">
+                    <text class="name-text">{{item.categoryName}}</text>
+                </view>
+            </navigator>
+            </view>
+            </view>
+             </swiper-item>
+         </block>
+    </swiper>
+    <view class="line"></view>
+    <view class="course-titles">
+        <view class="course-title-left">限时优惠</view>
+        <!--<navigator url="../../pages/chooseAppointmentProject/chooseAppointmentProject">-->
+        <view class="course-title-right"  hidden="{{!(courseList.length>3)}}" bindtap="lookmore">查看更多</view>
+        <!--</navigator>-->
+    </view>
+    <view class="showites">
+    <view wx:for-items="{{courseShowList}}" class="index-course-item"> 
+     <navigator url="../../pages/projectDetail/projectDetail?id={{item.code}}">
+                <view class="index-course-photo">
+                    <image  src="{{item.cover}}" class="index-course-photo-img" ></image>
+                </view>
+              
+                    <text class="name-text price-text name-height">{{item.objName}}</text>
+                    <view class="course-title margin-top">
+                    
+                    <view class="active-text">活动</view>
+                    <text class="name-text text-color">{{item.amount*0.01}}</text>
+                    <text class="name-text text-size text-color-999 ">元</text>
+                </view>
+                <view class="course-title margin-top">
+                 <text class="price-text margin-bottom text-color-999">{{"市场价 "+item.parentPrice*0.01+"元"}}</text>
+                 </view>
+                </navigator>
+            </view>
+            </view>
+</view>

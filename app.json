@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/order/order",
+        "pages/myself/myself",
+         "pages/login/login",
+        "pages/projectList/projectList",
+        "pages/projectDetail/projectDetail",
+        "pages/myself/accountList/accountList",
+        "pages/myself/consumeCard/consumeCard",
+        "pages/myself/courseCardList/courseCardList",
+        "pages/myself/healthyList/healthyList",
+        "pages/myself/qrCode/qrCode",
+        "pages/myself/appointmentList/appointmentList",
+        "pages/myself/appointmentDetail/appointmentDetail",
+        "pages/order/giveInfo/giveInfo",
+        "pages/myself/couponList/couponList",
+        "pages/makeOrder/makeOrder",            
+        "pages/myself/changeShopList/changeShopList",
+        "pages/chooseAppointmentProject/chooseAppointmentProject",
+
+        "pages/myself/chooseShop/chooseShop",
+
+        "pages/myself/setting/setting",
+        "pages/order/changeClerk/changeClerk"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "美业邦",
+      
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+  "tabBar": {
+    "color": "#b39851",
+    "selectedColor": "#222222",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/icon_main_project.png",
+      "selectedIconPath": "images/icon_main_project_selected.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/order/order",
+      "iconPath": "images/icon_order.png",
+      "selectedIconPath": "images/icon_order_selected.png",
+      "text": "预约单"
+    }, {
+      "pagePath": "pages/myself/myself",
+      "iconPath": "images/icon_me.png",
+      "selectedIconPath": "images/icon_me_selected.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}
